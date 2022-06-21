@@ -37,4 +37,5 @@ jobs:
 
       # Run pytest
       - name: Test with pytest
-        run: pytest pythools
+        run: pytest pythools --cov=pythools
+
