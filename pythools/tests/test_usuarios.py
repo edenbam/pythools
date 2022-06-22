@@ -17,7 +17,7 @@ def sessao(conexao):
     sessao_obj.fechar()
 
 
-@pytest.fixture
+@pytest.fixture(scope='module')
 def conexao():
     #setup
     conexao_obj =  Conexao()
